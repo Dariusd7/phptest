@@ -12,4 +12,9 @@ for($i = 0; $i < 10; $i++)
 	echo "you cant count dude!!!\n";
 }
 
+
+$x = 1;
+$y = 2;
+$z = $x + $y;
+echo $x . " + " . $y . " = " . $z . "\n";
 ?>
