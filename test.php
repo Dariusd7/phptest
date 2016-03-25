@@ -8,6 +8,7 @@ echo "whats up Scott.\n";
 for($i = 0; $i < 10; $i++)
 {
 	echo "not much dude!\n";
+	echo "you cant count dude!!!\n";
 }
 
 ?>
