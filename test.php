@@ -1,14 +1,18 @@
 <?php
+require("CustomerClass.php");
+require("dbmock.php");
 
-echo "Hello there. Can you modify me?\n";
-echo "this is another commit here.\n";
+$dbDataJson = getDdData();
 
-echo "whats up Scott.\n";
+echo $dbDataJson . "\n";
 
-for($i = 0; $i < 10; $i++)
-{
-	echo "not much dude!\n";
-	echo "you cant count dude!!!\n";
-}
+$dbDataObj = json_decode($dbDataJson);
+
+print_r($dbDataObj);
+
+
+$c1 = new Customer($dbDataObj->fname, $dbDataObj->lname, $dbDataObj->phone, $dbDataObj->email);
+print_r($c1);
+
 
 ?>
