@@ -9,6 +9,7 @@ for($i = 0; $i < 10; $i++)
 {
 	echo "not much dude!\n";
 	echo "will you create conflict?!\n";
+	echo "you cant count dude!!!\n";
 }
 
 ?>
